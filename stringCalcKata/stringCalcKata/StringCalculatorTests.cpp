@@ -101,5 +101,5 @@ TEST_CASE("Three numbers delimited either way, returns the sum", "[StringEval]")
 }
 
 TEST_CASE("Negative numbers throw an exception", "[StringEval]"){
-    REQUIRE(ParseString("-1") == 11);
+    REQUIRE_THROWS(ParseString("-1"));
 }
