@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../stringCalcKata/catch2.h">
+   </FileRef>
+   <FileRef
+      location = "group:../stringCalcKata/StringCalculator.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../stringCalcKata/StringCalculator.h">
+   </FileRef>
+   <FileRef
+      location = "group:../stringCalcKata/StringCalculatorTests.cpp">
+   </FileRef>
+   <FileRef
+      location = "self:stringCalcKata.xcodeproj">
+   </FileRef>
+</Workspace>
