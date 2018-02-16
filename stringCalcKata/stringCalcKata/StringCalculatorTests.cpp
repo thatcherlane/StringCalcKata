@@ -21,6 +21,10 @@ int ParseString(std::string inputStr)
         return 0;
     }
 
+    if(inputStr.find_first_of("-") != std::string::npos){
+        throw "No negative numbers accepted";
+    }
+
     else if(inputStr.find(',') != std::string::npos) {
         std::stringstream ss(inputStr);
 
