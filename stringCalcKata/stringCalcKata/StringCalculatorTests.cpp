@@ -33,5 +33,10 @@ TEST_CASE("Empty string returns 0", "[StringEval]") {
 
 TEST_CASE("Single string returns its value", "[StringEval]") {
     REQUIRE(ParseString("1") == 1);
-    REQUIRE(ParseString("2") == 2); 
+    REQUIRE(ParseString("2") == 2);
+}
+
+TEST_CASE("Two numbers comma delimited, returns the sum", "[StringEval]"){
+    REQUIRE(ParseString("1,2") == 3);
+    REQUIRE(ParseString("1,3") == 4);
 }
