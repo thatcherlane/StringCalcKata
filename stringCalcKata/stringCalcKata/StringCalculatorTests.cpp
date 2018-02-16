@@ -20,7 +20,7 @@ int ParseString(std::string inputStr)
     if(inputStr.empty()){
         return 0;
     }
-    
+
     else if(inputStr.find(',') != std::string::npos) {
         std::stringstream ss(inputStr);
 
@@ -93,4 +93,9 @@ TEST_CASE("Two numbers comma delimited, returns the sum", "[StringEval]"){
 TEST_CASE("Two numbers delimited by a new line, returns the sum", "[StringEval]"){
     REQUIRE(ParseString("1\n2") == 3);
     REQUIRE(ParseString("1\n3") == 4);
+}
+
+TEST_CASE("Three numbers delimited either way, returns the sum", "[StringEval]"){
+    REQUIRE(ParseString("1\n2\n5") == 8);
+    REQUIRE(ParseString("1\n3\n6") == 10);
 }
