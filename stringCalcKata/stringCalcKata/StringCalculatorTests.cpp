@@ -99,3 +99,7 @@ TEST_CASE("Three numbers delimited either way, returns the sum", "[StringEval]")
     REQUIRE(ParseString("1\n2\n5") == 8);
     REQUIRE(ParseString("1\n3\n6") == 10);
 }
+
+TEST_CASE("Negative numbers throw an exception", "[StringEval]"){
+    REQUIRE(ParseString("-1") == 11);
+}
